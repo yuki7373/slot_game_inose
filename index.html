@@ -114,9 +114,9 @@ body {
 
 <script>
 const reelSymbols = [
-  ['🍒','🍋','🍉','🍊','⭐','い'],
-  ['🍒','🍋','🍉','🍊','⭐','の'],
-  ['🍒','🍋','🍉','🍊','⭐','せ']
+  ['🍒','🍋','🍉','🍊','⭐','り'],
+  ['🍒','🍋','🍉','🍊','⭐','な'],
+  ['🍒','🍋','🍉','🍊','⭐','♡']
 ];
 
 let spinning = [false,false,false];
@@ -204,17 +204,17 @@ function checkResult(){
   const lamp = document.getElementById('gogoLamp');
 
   if(rinKaWin){
-    document.getElementById('result').innerText=" ばぁぁぁああーーーか！！！！";
+    document.getElementById('result').innerText=" 天才！！！！ちゅっ♡";
     lamp.classList.add('on');
     lamp.style.color = "#000"; // ← 黒文字に変更
-    lamp.innerText = "カス"; // 光る文字
+    lamp.innerText = "♡"; // 光る文字
   } else if(final[0]===final[1] && final[1]===final[2]){
-    document.getElementById('result').innerText="ここで運使うなよ";
+    document.getElementById('result').innerText="これなら運転事故らんな笑";
     lamp.classList.add('on');
     lamp.style.color = "#000"; // ← 黒文字に変更
     lamp.innerText = ""; // 光る文字
   } else {
-    document.getElementById('result').innerText="カスリーチ！";
+    document.getElementById('result').innerText="どんまい^^";
     lamp.innerText = "";
     lamp.classList.remove('on');
   }
